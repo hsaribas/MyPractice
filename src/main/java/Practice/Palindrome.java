@@ -18,7 +18,6 @@ public class Palindrome {
         if(word.equals(newWord)){
             System.out.println("It's a Palindrome -> " + word);
         }else{
-            System.out.println("Hello");
             System.out.println("It's NOT a Palindrome -> " + word);
         }
     }
