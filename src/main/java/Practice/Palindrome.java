@@ -20,9 +20,6 @@ public class Palindrome {
         }else{
             System.out.println("It's NOT a Palindrome -> " + word);
         }
-
-        System.out.println("Huzeyfe");
-
     }
 
 }
