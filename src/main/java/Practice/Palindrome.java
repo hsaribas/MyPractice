@@ -21,6 +21,8 @@ public class Palindrome {
             System.out.println("It's NOT a Palindrome -> " + word);
         }
 
+        System.out.println("Huzeyfe");
+
     }
 
 }
