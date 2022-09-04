@@ -23,5 +23,4 @@ public class Palindrome_Number {
             return false;
         }
     }
-
 }
