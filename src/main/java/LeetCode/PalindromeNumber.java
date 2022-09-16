@@ -1,6 +1,6 @@
 package LeetCode;
 
-public class Palindrome_Number {
+public class PalindromeNumber {
 
     public static void main(String[] args) {
 

@@ -1,2 +1,11 @@
-package LeetCode;public class LongestCommonPrefix {
+package LeetCode;
+
+public class LongestCommonPrefix {
+
+    public static void main(String[] args) {
+
+
+
+    }
+
 }
