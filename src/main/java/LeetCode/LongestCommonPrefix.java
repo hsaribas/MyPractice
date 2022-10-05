@@ -18,7 +18,7 @@ public class LongestCommonPrefix {
         String last = arr[arr.length-1];
         String newStr = "";
 
-        for(int i=0; i<arr.length; i++){
+        for(int i=0; i<arr[0].length(); i++){
             if(first.charAt(i)==last.charAt(i)){
                 newStr += first.charAt(i);
             }else{
