@@ -11,7 +11,7 @@ public class RomanToInt {
 
     }
 
-    static int romanToInt(String s){
+    static int romanToInt(String s) {
 
         Map<Character, Integer> map = new HashMap<>();
         map.put('I', 1);

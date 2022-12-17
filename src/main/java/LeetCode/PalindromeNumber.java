@@ -14,12 +14,12 @@ public class PalindromeNumber {
         String str = String.valueOf(x);
         String newStr = "";
 
-        for(int i=str.length()-1; i>-1; i--){
+        for (int i = str.length() - 1; i > -1; i--) {
             newStr += str.charAt(i);
         }
-        if(str.equals(newStr)){
+        if (str.equals(newStr)) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }

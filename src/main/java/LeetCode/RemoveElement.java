@@ -13,11 +13,11 @@ public class RemoveElement {
 
     }
 
-    public static int removeElement(int[] nums, int val){
+    public static int removeElement(int[] nums, int val) {
 
         List<Integer> list = new ArrayList<>();
-        for(int w:nums){
-            if(w!=val){
+        for (int w : nums) {
+            if (w != val) {
                 list.add(w);
             }
         }
