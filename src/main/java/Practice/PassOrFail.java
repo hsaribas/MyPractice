@@ -13,15 +13,15 @@ public class PassOrFail {
         String p = "PASS";
         String f = "FAIL";
 
-        for(int i=1; i<=ex; i++){
+        for (int i = 1; i <= ex; i++) {
             String attempt = scan.next();
-            if(Objects.equals(attempt, p) && i<ex){
+            if (Objects.equals(attempt, p) && i < 16) {
                 score += 6;
-            }else if(Objects.equals(attempt, p) && i==ex){
-                score +=10;
-            }else if(Objects.equals(attempt, f) && score>=6){
+            } else if (Objects.equals(attempt, p) && i == 16) {
+                score += 10;
+            } else if (Objects.equals(attempt, f) && score >= 6) {
                 score -= 6;
-            }else if(Objects.equals(attempt, f) && score==0){
+            } else if (Objects.equals(attempt, f) && score == 0) {
                 score += 0;
             }
         }
