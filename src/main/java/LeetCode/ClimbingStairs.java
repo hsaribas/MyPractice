@@ -6,7 +6,6 @@ public class ClimbingStairs {
 
         int number = 7;
         System.out.println(climbStairs(number));
-
     }
 
     public static int climbStairs(int n) {

@@ -6,7 +6,6 @@ public class IntToRoman {
 
         int num = 1995;
         System.out.println(intToRoman(num));
-
     }
 
     public static String intToRoman(int num) {

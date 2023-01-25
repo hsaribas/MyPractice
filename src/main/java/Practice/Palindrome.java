@@ -11,15 +11,14 @@ public class Palindrome {
         String word = scan.next().toLowerCase();
         String newWord = "";
 
-        for(int i=word.length()-1; i>-1; i--){
+        for (int i = word.length() - 1; i > -1; i--) {
             newWord += word.charAt(i);
         }
 
-        if(word.equals(newWord)){
+        if (word.equals(newWord)) {
             System.out.println("It's a Palindrome -> " + word);
-        }else{
+        } else {
             System.out.println("It's NOT a Palindrome -> " + word);
         }
     }
-
 }

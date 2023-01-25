@@ -8,7 +8,6 @@ public class PlusOne {
 
         int[] arr = {1, 2, 3, 4};
         System.out.println(Arrays.toString(plusOne(arr)));
-
     }
 
     public static int[] plusOne(int[] digits) {
@@ -20,8 +19,10 @@ public class PlusOne {
             }
             digits[i] = 0;
         }
+
         digits = new int[digits.length + 1];
         digits[0] = 1;
+
         return digits;
     }
 }

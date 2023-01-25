@@ -9,7 +9,6 @@ public class RomanToInt {
 
         String str = "MCMXCIV";
         System.out.println(romanToInt(str));
-
     }
 
     static int romanToInt(String s) {
@@ -24,6 +23,7 @@ public class RomanToInt {
         map.put('M', 1000);
 
         int num = 0;
+
         for (int i = 0; i < s.length(); i++) {
             if (i < (s.length() - 1) && map.get(s.charAt(i)) < map.get(s.charAt(i + 1))) {
                 num -= map.get(s.charAt(i));

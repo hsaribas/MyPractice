@@ -6,7 +6,6 @@ public class Sqrt {
 
         int a = 8;
         System.out.println(mySqrt(a));
-
     }
 
     public static int mySqrt(int x) {

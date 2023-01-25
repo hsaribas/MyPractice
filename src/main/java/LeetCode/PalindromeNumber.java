@@ -6,7 +6,6 @@ public class PalindromeNumber {
 
         int x = 121;
         System.out.println(isPalindrome(x));
-
     }
 
     public static boolean isPalindrome(int x) {
@@ -17,6 +16,7 @@ public class PalindromeNumber {
         for (int i = str.length() - 1; i > -1; i--) {
             newStr += str.charAt(i);
         }
+
         if (str.equals(newStr)) {
             return true;
         } else {

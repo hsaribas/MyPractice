@@ -9,7 +9,6 @@ public class MedianOfArrays {
         int[] x = {1, 2};
         int[] y = {3, 4};
         System.out.println(findMedianSortedArrays(x, y));
-
     }
 
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {

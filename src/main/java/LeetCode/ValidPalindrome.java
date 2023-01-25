@@ -6,7 +6,6 @@ public class ValidPalindrome {
 
         String xyz = "A man, a plan, a canal: Panama";
         System.out.println(isPalindrome(xyz));
-
     }
 
     public static boolean isPalindrome(String s) {

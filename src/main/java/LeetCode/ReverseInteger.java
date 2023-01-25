@@ -6,7 +6,6 @@ public class ReverseInteger {
 
         int num = -3450;
         System.out.println(reverse(num));
-
     }
 
     public static int reverse(int x) {
@@ -23,7 +22,6 @@ public class ReverseInteger {
         } else if (x % 10 == 0) {
             str = str.substring(0, str.indexOf("0"));
         }
-
         return Integer.parseInt(s + new StringBuilder(str).reverse());
     }
 }

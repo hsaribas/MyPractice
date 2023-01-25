@@ -8,9 +8,7 @@ public class TwoSum {
 
         int[] numbers = {2, 7, 11, 15};
         int point = 9;
-
         System.out.println(Arrays.toString(twoSum(numbers, point)));
-
     }
 
     public static int[] twoSum(int[] nums, int target) {

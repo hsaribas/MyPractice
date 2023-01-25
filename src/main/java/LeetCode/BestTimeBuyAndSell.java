@@ -8,7 +8,6 @@ public class BestTimeBuyAndSell {
 
         int[] arr = {7, 1, 5, 3, 6, 4};
         System.out.println(maxProfit(arr));
-
     }
 
     public static int maxProfit(int[] prices) {

@@ -6,7 +6,6 @@ public class MultiplyStrings {
 
         String a = "7", b = "5";
         System.out.println(multiply(a, b));
-
     }
 
     public static String multiply(String num1, String num2) {
