@@ -14,20 +14,19 @@ public class HappyNumber {
     public static boolean isHappy(int n) {
 
         Set<Integer> seen = new HashSet<>();
-        int current = n;
 
-        while (current != 1) {
+        while (n != 1) {
             int sum = 0;
-            while (current > 0) {
-                int digit = current % 10;
+            while (n > 0) {
+                int digit = n % 10;
                 sum += digit * digit;
-                current /= 10;
+                n /= 10;
             }
             if (seen.contains(sum)) {
                 return false;
             }
             seen.add(sum);
-            current = sum;
+            n = sum;
         }
         return true;
     }
