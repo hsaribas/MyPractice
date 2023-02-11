@@ -20,8 +20,6 @@ public class LongestCommonPrefix {
         for (int i = 0; i < arr[0].length(); i++) {
             if (first.charAt(i) == last.charAt(i)) {
                 newStr += first.charAt(i);
-            } else {
-                break;
             }
         }
         return newStr;

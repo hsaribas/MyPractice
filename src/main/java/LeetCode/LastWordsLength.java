@@ -12,8 +12,7 @@ public class LastWordsLength {
 
         String[] arr = s.trim().split(" ");
         String str = arr[arr.length - 1];
-        int len = str.length();
 
-        return len;
+        return str.length();
     }
 }

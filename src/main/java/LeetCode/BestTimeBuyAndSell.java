@@ -1,7 +1,5 @@
 package LeetCode;
 
-import java.util.Arrays;
-
 public class BestTimeBuyAndSell {
 
     public static void main(String[] args) {
