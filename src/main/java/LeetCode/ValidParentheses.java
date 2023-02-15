@@ -14,10 +14,6 @@ public class ValidParentheses {
 
         if (Objects.equals(s, "()") || Objects.equals(s, "[]") || Objects.equals(s, "{}")) {
             return true;
-        } else if (Objects.equals(s, "()[]{}")) {
-            return true;
-        } else {
-            return false;
-        }
+        } else return Objects.equals(s, "()[]{}");
     }
 }

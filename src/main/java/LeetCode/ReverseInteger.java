@@ -13,12 +13,9 @@ public class ReverseInteger {
         String str = Integer.toString(x);
         String s = "";
 
-        if (x < 0) {
+        if (x < 0 && x % 10 == 0) {
             s = "-";
-            str = str.substring(1);
-            if (x % 10 == 0) {
-                str = str.substring(0, str.indexOf("0"));
-            }
+            str = str.substring(1, str.indexOf("0"));
         } else if (x % 10 == 0) {
             str = str.substring(0, str.indexOf("0"));
         }
