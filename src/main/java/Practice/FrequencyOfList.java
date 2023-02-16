@@ -8,13 +8,11 @@ public class FrequencyOfList {
         int count = 0;
         int num = 10;
 
-        for(int i=0; i<arr.length; i++){
-            if(arr[i]==num){
+        for (int j : arr) {
+            if (j == num) {
                 count++;
             }
         }
         System.out.println("Number 10 has repeated " + count + " times");
-
     }
-
 }

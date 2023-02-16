@@ -11,7 +11,6 @@ public class MethodByPattern {
         int n = scan.nextInt();
 
         pattern(n);
-
     }
 
     static void pattern(int a) {

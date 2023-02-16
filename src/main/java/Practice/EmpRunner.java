@@ -11,7 +11,5 @@ public class EmpRunner {
 
         Employee emp2 = new Employee("Said", 10000, 45, 2018);
         System.out.println(emp2);
-
     }
-
 }
