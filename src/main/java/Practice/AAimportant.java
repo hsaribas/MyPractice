@@ -13,9 +13,13 @@ public class AAimportant {
 
     String x = "19";
     String y = String.valueOf(a);
+    String z = "SkyLinE";
+    String xx = z.toUpperCase();
+    String yy = xx.toLowerCase();
 
     int g = Integer.parseInt(x);
     int h = (int) (Math.random() + 100);
 
     Random r = new Random();
+    int i = r.nextInt(8);
 }
