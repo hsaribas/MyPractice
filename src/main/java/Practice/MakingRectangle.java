@@ -3,7 +3,6 @@ package Practice;
 public class MakingRectangle {
 
     public static void main(String[] args) {
-
         int height = 5;
         int width = 7;
         char ch = '$';

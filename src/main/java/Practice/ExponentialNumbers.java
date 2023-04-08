@@ -3,18 +3,17 @@ package Practice;
 import java.util.Scanner;
 
 public class ExponentialNumbers {
+
     static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
-
         System.out.println("Welcome!");
         power();
     }
 
     static void power() {
-
         while (true) {
-            System.out.println("Please enter a number then it's exponent to multiply!");
+            System.out.println("Please enter a number then its exponent to multiply!");
             int num = scan.nextInt();
             int pow = scan.nextInt();
             int result = 1;

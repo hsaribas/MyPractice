@@ -13,12 +13,10 @@ public class GuessMyNumber {
     static List<Integer> list = new ArrayList<>();
 
     public static void main(String[] args) {
-
         pickNumber();
     }
 
     static void pickNumber() {
-
         while (right > 0) {
             System.out.println("Pick a number between 0 & 100");
             pick = scan.nextInt();

@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class CountCommonPrefix {
 
     public static void main(String[] args) {
-
         Scanner scan = new Scanner(System.in);
         String s = scan.nextLine().toLowerCase();
         String text = scan.nextLine().toLowerCase();

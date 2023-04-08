@@ -8,7 +8,6 @@ public class Employee {
     int hireYear;
 
     public Employee(String name, int salary, int workHours, int hireYear) {
-
         this.name = name;
         this.salary = salary;
         this.workHours = workHours;
@@ -18,17 +17,16 @@ public class Employee {
     @Override
     public String toString() {
         return "Name = " + name + "\n" +
-                        "Salary = " + salary + "\n" +
-                        "Work Hours = " + workHours + "\n" +
-                        "Hire Year = " + hireYear + "\n" +
-                        "Tax = " + tax() + "\n" +
-                        "Bonus = " + bonus() + "\n" +
-                        "Raise Salary = " + raiseSalary() + "\n" +
-                        "Total Salary = " + total();
+                "Salary = " + salary + "\n" +
+                "Work Hours = " + workHours + "\n" +
+                "Hire Year = " + hireYear + "\n" +
+                "Tax = " + tax() + "\n" +
+                "Bonus = " + bonus() + "\n" +
+                "Raise Salary = " + raiseSalary() + "\n" +
+                "Total Salary = " + total();
     }
 
     double tax() {
-
         double tax;
 
         if (salary > 1000) {
@@ -40,7 +38,6 @@ public class Employee {
     }
 
     double bonus() {
-
         double bonus;
 
         if (workHours > 40) {
@@ -52,7 +49,6 @@ public class Employee {
     }
 
     double raiseSalary() {
-
         double raiseSalary;
         int year = 2022 - hireYear;
 
@@ -67,7 +63,6 @@ public class Employee {
     }
 
     double total() {
-
         return salary - tax() + bonus() + raiseSalary();
     }
 }

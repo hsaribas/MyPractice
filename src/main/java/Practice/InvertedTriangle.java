@@ -5,9 +5,8 @@ import java.util.Scanner;
 public class InvertedTriangle {
 
     public static void main(String[] args) {
-
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter a number: ");
+        System.out.print("Enter a number: ");
         int num = scan.nextInt();
         int num1 = num - 1;
 
