@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class PassOrFail {
 
     public static void main(String[] args) {
-
         Scanner scan = new Scanner(System.in);
         int ex = scan.nextInt();
         int score = 0;

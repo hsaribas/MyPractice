@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class SumOfIndexes {
 
     public static void main(String[] args) {
-
         Scanner scan = new Scanner(System.in);
         String c = scan.nextLine();
         String s = scan.nextLine();
