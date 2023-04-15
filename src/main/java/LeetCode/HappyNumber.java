@@ -6,13 +6,11 @@ import java.util.Set;
 public class HappyNumber {
 
     public static void main(String[] args) {
-
         int num = 19;
         System.out.println(isHappy(num));
     }
 
     public static boolean isHappy(int n) {
-
         Set<Integer> seen = new HashSet<>();
 
         while (n != 1) {

@@ -3,13 +3,11 @@ package LeetCode;
 public class ClimbingStairs {
 
     public static void main(String[] args) {
-
         int number = 7;
         System.out.println(climbStairs(number));
     }
 
     public static int climbStairs(int n) {
-
         if (n <= 1) {
             return 1;
         }

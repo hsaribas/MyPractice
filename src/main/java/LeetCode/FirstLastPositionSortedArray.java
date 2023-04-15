@@ -5,14 +5,12 @@ import java.util.Arrays;
 public class FirstLastPositionSortedArray {
 
     public static void main(String[] args) {
-
         int[] arr = {5, 7, 7, 8, 8, 10};
         int tar = 8;
         System.out.println(Arrays.toString(searchRange(arr, tar)));
     }
 
     public static int[] searchRange(int[] nums, int target) {
-
         int[] result = new int[]{-1, -1};
         if (nums == null || nums.length == 0) return result;
         int left = 0;
@@ -35,7 +33,6 @@ public class FirstLastPositionSortedArray {
     }
 
     private static int findStartingPosition(int[] nums, int target, int left, int right) {
-
         while (left < right) {
             int mid = left + (right - left) / 2;
 
@@ -49,7 +46,6 @@ public class FirstLastPositionSortedArray {
     }
 
     private static int findEndingPosition(int[] nums, int target, int left, int right) {
-
         while (left < right) {
             int mid = left + (right - left + 1) / 2;
 
