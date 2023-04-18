@@ -3,13 +3,11 @@ package LeetCode;
 public class LongestPalindromicSubstring {
 
     public static void main(String[] args) {
-
         String str = "cbbd";
         System.out.println(longestPalindrome(str));
     }
 
     public static String longestPalindrome(String s) {
-
         if (s == null || s.length() < 1) return "";
         int start = 0, end = 0;
 
@@ -27,7 +25,6 @@ public class LongestPalindromicSubstring {
     }
 
     private static int expandAroundCenter(String s, int left, int right) {
-
         int L = left, R = right;
 
         while (L >= 0 && R < s.length() && s.charAt(L) == s.charAt(R)) {

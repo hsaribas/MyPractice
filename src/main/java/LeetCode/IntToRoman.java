@@ -3,13 +3,11 @@ package LeetCode;
 public class IntToRoman {
 
     public static void main(String[] args) {
-
         int num = 1995;
         System.out.println(intToRoman(num));
     }
 
     public static String intToRoman(int num) {
-
         String[] thousands = {"", "M", "MM", "MMM"};
         String[] hundreds = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
         String[] tens = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
