@@ -3,13 +3,11 @@ package LeetCode;
 public class ReverseInteger {
 
     public static void main(String[] args) {
-
         int num = -3450;
         System.out.println(reverse(num));
     }
 
     public static int reverse(int x) {
-
         String str = Integer.toString(x);
         String s = "";
 

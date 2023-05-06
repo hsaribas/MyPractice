@@ -5,13 +5,11 @@ import java.util.Arrays;
 public class ThreeSumClosest {
 
     public static void main(String[] args) {
-
         int[] arr = {-1, 2, 1, -4};
         System.out.println(threeSumClosest(arr, 1));
     }
 
     public static int threeSumClosest(int[] nums, int target) {
-
         Arrays.sort(nums);
         int closestSum = nums[0] + nums[1] + nums[2];
 

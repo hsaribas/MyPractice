@@ -3,13 +3,11 @@ package LeetCode;
 public class UniquePaths {
 
     public static void main(String[] args) {
-
         int a = 3, b = 7;
         System.out.println(uniquePaths(a, b));
     }
 
     public static int uniquePaths(int m, int n) {
-
         int[][] dp = new int[m][n];
 
         for (int i = 0; i < m; i++) {

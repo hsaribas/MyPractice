@@ -6,13 +6,11 @@ import java.util.Map;
 public class RomanToInt {
 
     public static void main(String[] args) {
-
         String str = "MCMXCIV";
         System.out.println(romanToInt(str));
     }
 
-    static int romanToInt(String s) {
-
+    public static int romanToInt(String s) {
         Map<Character, Integer> map = new HashMap<>();
         map.put('I', 1);
         map.put('V', 5);
