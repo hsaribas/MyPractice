@@ -14,16 +14,17 @@ public class Calculator {
         System.out.println("* * * CALCULATOR * * *");
         System.out.println();
 
-        value();
-
         while (flag) {
             operation();
         }
+
         System.out.println();
         System.out.println("* * * See you again! * * *");
     }
 
     private void operation() {
+        System.out.println();
+        value();
         System.out.println();
         System.out.print("Select an operation -> [ +, -, *, / ] : ");
         String str = scan.next().toUpperCase();
@@ -50,19 +51,25 @@ public class Calculator {
         }
         System.out.println();
         value();
-
-        System.out.println();
-        System.out.print("If you want to continue press 'Y' or press 'Q' to quit: ");
-        str = scan.next().toUpperCase();
-
-        if (str.equalsIgnoreCase("Y")) {
-            operation();
-        } else if (str.equalsIgnoreCase("Q")){
-            flag = false;
-        }
+        decision();
     }
 
     private void value() {
-        System.out.println("Current value -> " + number);
+        System.out.println("Current value -> [" + number + "]");
+    }
+
+    private void decision() {
+        System.out.println();
+        System.out.print("If you want to continue press 'C' or press 'Q' to quit: ");
+        String dec = scan.next().toUpperCase();
+
+        if (dec.equalsIgnoreCase("C")) {
+            operation();
+        } else if (dec.equalsIgnoreCase("Q")){
+            flag = false;
+        } else {
+            System.out.println("Enter a valid letter!");
+            decision();
+        }
     }
 }
