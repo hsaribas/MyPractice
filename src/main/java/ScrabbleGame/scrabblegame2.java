@@ -18,11 +18,10 @@ public class scrabblegame2 {
     static char ch;
 
     public static void main(String[] args) {
-
         gameBegins();
-
     }
-    public static void gameBegins(){
+
+    public static void gameBegins() {
         System.out.println("Welcome to our Scrabble Game for two person!" + "\n" + "Round " + roundNumber + " is Starting!");
         System.out.println();
         System.out.println("Pick your player number ==> Press 1 or 2 ");
@@ -38,7 +37,8 @@ public class scrabblegame2 {
 
         continueToGameOrFinish();
     }
-    public static void gameContinues(){
+
+    public static void gameContinues() {
         System.out.println("Do you want to continue? Press 'Y' for YES or press 'N' for NO");
         continueOrFinish = scan.next();
 
@@ -46,7 +46,8 @@ public class scrabblegame2 {
 
         throughTheNextStep();
     }
-    public static void throughTheNextStep(){
+
+    public static void throughTheNextStep() {
         System.out.println("Enter your player number");
         playersNum = scan.nextInt();
 
@@ -58,22 +59,12 @@ public class scrabblegame2 {
         gameBegins();
     }
 
-
-
-
-
-
-
-
-
-
-
-    public static void winnerOfGame(){
-        if(firstPlayersScore>secondPlayersScore){
+    public static void winnerOfGame() {
+        if (firstPlayersScore > secondPlayersScore) {
             System.out.println("The Winner is: First Player !!!");
-        }else if(firstPlayersScore<secondPlayersScore){
+        } else if (firstPlayersScore < secondPlayersScore) {
             System.out.println("The Winner is: Second Player !!!");
-        }else{
+        } else {
             System.out.println("Nobody won. Game ended in a draw !!!");
         }
 
@@ -83,38 +74,35 @@ public class scrabblegame2 {
         System.out.println();
         System.out.println("If you want to start to new game press to S");
         restartTheGame = scan.next();
-        if(restartTheGame.equalsIgnoreCase("S")){
+        if (restartTheGame.equalsIgnoreCase("S")) {
             gameBegins();
         }
     }
 
-
-    public static void currentScore(){
+    public static void currentScore() {
         System.out.println("Current points... " + "\n" + "First Players Score is: " + firstPlayersScore + "\n" + "Second Players Score is: " + secondPlayersScore);
     }
 
-
-    public static void continueToGameOrFinish(){
-        if(validOrNot.equalsIgnoreCase("Y")){
-            if(playersNum==1){
+    public static void continueToGameOrFinish() {
+        if (validOrNot.equalsIgnoreCase("Y")) {
+            if (playersNum == 1) {
                 firstPlayersScore += enterWord.length();
-            }else if(playersNum==2){
+            } else if (playersNum == 2) {
                 secondPlayersScore += enterWord.length();
             }
 
             currentScore();
             gameContinues();
 
-        }else if(validOrNot.equalsIgnoreCase("N")){
+        } else if (validOrNot.equalsIgnoreCase("N")) {
             winnerOfGame();
-        }else{
+        } else {
             System.out.println("Enter a valid letter to continue or end the game!");
         }
     }
 
-
-    public static void pickingPlayerNumber(){
-        switch (playersNum){
+    public static void pickingPlayerNumber() {
+        switch (playersNum) {
             case 1:
                 currentPlayer = "First Player";
                 break;
@@ -126,20 +114,19 @@ public class scrabblegame2 {
         }
     }
 
-
-    public static void addingLetterToEachSidePlayerWants(){
-        if(continueOrFinish.equalsIgnoreCase("Y")){
+    public static void addingLetterToEachSidePlayerWants() {
+        if (continueOrFinish.equalsIgnoreCase("Y")) {
             System.out.println("Enter a letter");
             ch = scan.next().charAt(0);
 
             System.out.println("Which side you want to add letter? Press 'L' for Beginning and 'R' for End");
             beginningOrEnd = scan.next();
 
-            if(beginningOrEnd.equalsIgnoreCase("L")){
+            if (beginningOrEnd.equalsIgnoreCase("L")) {
                 System.out.println(ch + enterWord);
-            }else if(beginningOrEnd.equalsIgnoreCase("R")){
+            } else if (beginningOrEnd.equalsIgnoreCase("R")) {
                 System.out.println(enterWord + ch);
-            }else{
+            } else {
                 System.out.println("Enter a valid letter!");
             }
 
@@ -151,9 +138,9 @@ public class scrabblegame2 {
 
             throughTheNextStep();
 
-        }else if(continueOrFinish.equalsIgnoreCase("N")){
+        } else if (continueOrFinish.equalsIgnoreCase("N")) {
             winnerOfGame();
-        }else{
+        } else {
             System.out.println("Enter a valid letter!");
         }
     }
