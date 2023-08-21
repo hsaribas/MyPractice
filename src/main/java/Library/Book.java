@@ -2,35 +2,30 @@ package Library;
 
 public class Book {
 
-    private int id;
-
-    private String name;
+    private String title;
 
     private String author;
 
-    private boolean available;
+    private String isbn;
 
-    public Book(int id, String name, String author, boolean available) {
-        this.id = id;
-        this.name = name;
+    private boolean isAvailable;
+
+    private String borrowerName = "";
+
+    public Book(String title, String author, String isbn, boolean isAvailable, String borrowerName) {
+        this.title = title;
         this.author = author;
-        this.available = available;
+        this.isbn = isbn;
+        this.isAvailable = isAvailable;
+        this.borrowerName = borrowerName;
     }
 
-    public int getId() {
-        return id;
+    public String getTitle() {
+        return title;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getAuthor() {
@@ -41,11 +36,27 @@ public class Book {
         this.author = author;
     }
 
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
     public boolean isAvailable() {
-        return available;
+        return isAvailable;
     }
 
     public void setAvailable(boolean available) {
-        this.available = available;
+        isAvailable = available;
+    }
+
+    public String getBorrowerName() {
+        return borrowerName;
+    }
+
+    public void setBorrowerName(String borrowerName) {
+        this.borrowerName = borrowerName;
     }
 }
