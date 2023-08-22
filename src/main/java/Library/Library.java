@@ -39,10 +39,12 @@ public class Library {
                book.setAvailable(false);
                book.setBorrowerName(borrowerName);
                System.out.println("Book " + book.getTitle() + " has been borrowed by " + borrowerName);
+               System.out.println();
                return;
            }
        }
        System.out.println("Book with ISBN: " + isbn + " is not available for now.");
+       System.out.println();
     }
 
     public void returnBook(String isbn) {
@@ -51,10 +53,12 @@ public class Library {
                 book.setAvailable(true);
                 book.setBorrowerName("");
                 System.out.println("Book " + book.getTitle() + " has been returned.");
+                System.out.println();
                 return;
             }
         }
         System.out.println("Book with ISBN: " + isbn + " is available.");
+        System.out.println();
     }
 
     public List<Book> searchByTitle(String title) {

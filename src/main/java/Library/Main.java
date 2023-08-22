@@ -45,6 +45,7 @@ public class Main {
 
             library.returnBook(isbn);
         }
+        System.out.println();
         System.out.println("* * * See you again! * * *");
     }
 }
