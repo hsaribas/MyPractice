@@ -5,14 +5,11 @@ import java.util.Scanner;
 public class Calculator {
 
     private double number = 0;
-
     private boolean flag = true;
-
     private final Scanner scan = new Scanner(System.in);
 
     public void calc() {
         System.out.println("* * * CALCULATOR * * *");
-        System.out.println();
 
         while (flag) {
             operation();
@@ -23,8 +20,8 @@ public class Calculator {
     }
 
     private void operation() {
-        System.out.println();
         value();
+
         System.out.println();
         System.out.print("Select an operation -> [ +, -, *, / ] : ");
         String str = scan.next().toUpperCase();
@@ -33,28 +30,20 @@ public class Calculator {
         double n = scan.nextDouble();
 
         switch (str) {
-            case "+":
-                number += n;
-                break;
-            case "-":
-                number -= n;
-                break;
-            case "*":
-                number *= n;
-                break;
-            case "/":
-                number /= n;
-                break;
-            default:
-                System.out.println("Enter a valid operation!");
-                break;
+            case "+" -> number += n;
+            case "-" -> number -= n;
+            case "*" -> number *= n;
+            case "/" -> number /= n;
+            default -> System.out.println("Enter a valid operation!");
         }
+
         System.out.println();
         value();
         decision();
     }
 
     private void value() {
+        System.out.println();
         System.out.println("Current value -> [" + number + "]");
     }
 
@@ -65,7 +54,7 @@ public class Calculator {
 
         if (dec.equalsIgnoreCase("C")) {
             operation();
-        } else if (dec.equalsIgnoreCase("Q")){
+        } else if (dec.equalsIgnoreCase("Q")) {
             flag = false;
         } else {
             System.out.println("Enter a valid letter!");

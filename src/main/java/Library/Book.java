@@ -3,13 +3,9 @@ package Library;
 public class Book {
 
     private String title;
-
     private String author;
-
     private String isbn;
-
     private boolean isAvailable;
-
     private String borrowerName = "";
 
     public Book(String title, String author, String isbn, boolean isAvailable, String borrowerName) {

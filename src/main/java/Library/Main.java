@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Main {
 
     static Library library = new Library();
-
     static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -26,25 +25,28 @@ public class Main {
     public static void process() {
         System.out.println("* * * Welcome to Sky Library * * * ");
         System.out.println();
+
         library.showAllBooks();
         System.out.println();
 
         System.out.print("Do you want to 'borrow' a book or 'return'?: ");
-        String dec = scan.nextLine();
+        String dec = scan.nextLine().toLowerCase();
 
-        if(dec.equalsIgnoreCase("borrow")) {
+        if (dec.equalsIgnoreCase("borrow")) {
             System.out.print("Enter your name please: ");
             String name = scan.nextLine();
             System.out.print("Enter the ISBN of the book: ");
             String isbn = scan.nextLine();
 
             library.borrowBook(isbn, name);
-        } else if(dec.equalsIgnoreCase("return")) {
+
+        } else if (dec.equalsIgnoreCase("return")) {
             System.out.print("Enter the ISBN of the book: ");
             String isbn = scan.nextLine();
 
             library.returnBook(isbn);
         }
+
         System.out.println();
         System.out.println("* * * See you again! * * *");
     }
