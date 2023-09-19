@@ -9,7 +9,7 @@ public class Library {
 
     public void addBook(String title, String author, String isbn, boolean isAvailable, String borrowerName) {
         Book book = new Book(title, author, isbn, isAvailable, borrowerName);
-        this.books.add(book);
+        books.add(book);
     }
 
     public void showAllBooks() {
@@ -18,6 +18,7 @@ public class Library {
         } else {
             System.out.println("<< Book collection of Sky Library >>");
             System.out.println();
+
             for (Book book : books) {
                 System.out.println("- Title: " + book.getTitle());
                 System.out.println("- Author: " + book.getAuthor());
