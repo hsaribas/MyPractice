@@ -2,7 +2,7 @@ package Practice;
 
 import java.util.Random;
 
-public class AAimportant {
+public class A {
 
     int a = Integer.MAX_VALUE;
     int b = Integer.MIN_VALUE;

@@ -18,6 +18,7 @@ public class ShortestDistance {
                 num = (int) Math.round(v);
             }
         }
+
         System.out.println(60 / num);
     }
 }

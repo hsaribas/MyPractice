@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class PrimeNumber {
 
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.print("Enter a number: ");
-        int n = s.nextInt();
+        int n = scan.nextInt();
 
         if (isPrime(n)) {
-            System.out.println(n + " is a prime number!");
+            System.out.println(n + " is a Prime number!");
         } else {
-            System.out.println(n + " is not a prime number!");
+            System.out.println(n + " is not a Prime number!");
         }
     }
 
@@ -26,6 +26,7 @@ public class PrimeNumber {
                 return false;
             }
         }
+
         return true;
     }
 }

@@ -8,6 +8,7 @@ public class SumOfIndexes {
         Scanner scan = new Scanner(System.in);
         String c = scan.nextLine();
         String s = scan.nextLine();
+
         String[] arr = s.split("");
         int sum = 0;
 
@@ -16,6 +17,7 @@ public class SumOfIndexes {
                 sum += i;
             }
         }
+
         System.out.println(sum);
     }
 }
