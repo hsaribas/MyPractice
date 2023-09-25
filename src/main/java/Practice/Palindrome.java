@@ -6,7 +6,7 @@ public class Palindrome {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter a word to check if it is palindrome or not");
+        System.out.print("Enter a word to check if it is palindrome or not: ");
         String word = scan.next().toLowerCase();
         StringBuilder newWord = new StringBuilder();
 

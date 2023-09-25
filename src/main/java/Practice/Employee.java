@@ -14,18 +14,6 @@ public class Employee {
         this.hireYear = hireYear;
     }
 
-    @Override
-    public String toString() {
-        return "Name = " + name + "\n" +
-                "Salary = " + salary + "\n" +
-                "Work Hours = " + workHours + "\n" +
-                "Hire Year = " + hireYear + "\n" +
-                "Tax = " + tax() + "\n" +
-                "Bonus = " + bonus() + "\n" +
-                "Raise Salary = " + raiseSalary() + "\n" +
-                "Total Salary = " + total();
-    }
-
     double tax() {
         double tax;
 
@@ -34,6 +22,7 @@ public class Employee {
         } else {
             tax = 0;
         }
+
         return tax;
     }
 
@@ -45,6 +34,7 @@ public class Employee {
         } else {
             bonus = 0;
         }
+
         return bonus;
     }
 
@@ -59,10 +49,23 @@ public class Employee {
         } else {
             raiseSalary = salary * 0.15;
         }
+
         return raiseSalary;
     }
 
     double total() {
         return salary - tax() + bonus() + raiseSalary();
+    }
+
+    @Override
+    public String toString() {
+        return "Name = " + name + "\n" +
+                "Salary = " + salary + "\n" +
+                "Work Hours = " + workHours + "\n" +
+                "Hire Year = " + hireYear + "\n" +
+                "Tax = " + tax() + "\n" +
+                "Bonus = " + bonus() + "\n" +
+                "Raise Salary = " + raiseSalary() + "\n" +
+                "Total Salary = " + total();
     }
 }

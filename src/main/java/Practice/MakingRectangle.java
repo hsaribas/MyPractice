@@ -11,6 +11,7 @@ public class MakingRectangle {
             for (int j = 0; j < width; j++) {
                 System.out.print(ch);
             }
+
             System.out.println();
         }
     }

@@ -3,7 +3,6 @@ package Practice;
 public class EmpRunner {
 
     public static void main(String[] args) {
-
         Employee emp1 = new Employee("Huzeyfe", 7000, 45, 2015);
         System.out.println(emp1);
 

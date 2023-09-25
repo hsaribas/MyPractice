@@ -18,7 +18,7 @@ public class GuessMyNumber {
 
     static void pickNumber() {
         while (right > 0) {
-            System.out.println("Pick a number between 0 & 100");
+            System.out.print("Pick a number between 0 & 100: ");
             pick = scan.nextInt();
             list.add(pick);
 
@@ -29,10 +29,12 @@ public class GuessMyNumber {
                 System.out.println("Try again!");
                 System.out.println();
                 right--;
+
                 if (right == 0) {
                     System.out.println("Game Over!" + "\n" + "Your predictions: " + list);
                     break;
                 }
+
                 pickNumber();
             }
         }

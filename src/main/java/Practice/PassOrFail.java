@@ -14,6 +14,7 @@ public class PassOrFail {
 
         for (int i = 1; i <= ex; i++) {
             String attempt = scan.next();
+
             if (Objects.equals(attempt, p) && i < 16) {
                 score += 6;
             } else if (Objects.equals(attempt, p) && i == 16) {
@@ -24,6 +25,7 @@ public class PassOrFail {
                 score += 0;
             }
         }
+
         System.out.println(score);
     }
 }

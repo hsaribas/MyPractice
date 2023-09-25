@@ -12,6 +12,7 @@ public class FrequencyOfList {
                 count++;
             }
         }
+
         System.out.println("Number 10 has repeated " + count + " times");
     }
 }

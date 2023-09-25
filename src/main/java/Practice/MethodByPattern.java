@@ -17,6 +17,7 @@ public class MethodByPattern {
             System.out.print(a + " ");
             pattern(a - 5);
         }
+
         System.out.print(a + " ");
     }
 }

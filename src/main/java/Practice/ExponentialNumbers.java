@@ -12,8 +12,11 @@ public class ExponentialNumbers {
     }
 
     static void power() {
-        while (true) {
-            System.out.println("Please enter a number then its exponent to multiply!");
+        boolean flag = true;
+
+        while (flag) {
+            System.out.println();
+            System.out.println("Enter a number then its exponent to multiply: ");
             int num = scan.nextInt();
             int pow = scan.nextInt();
             int result = 1;
@@ -21,18 +24,19 @@ public class ExponentialNumbers {
             for (int i = 1; i <= pow; i++) {
                 result *= num;
             }
+
             System.out.println(result);
 
             System.out.println();
 
-            System.out.println("To continue press 1, or press 2 to quit");
+            System.out.print("To continue press 1, or press 2 to quit: ");
             int dec = scan.nextInt();
 
             if (dec == 1) {
                 power();
             } else if (dec == 2) {
                 System.out.println("See you again, bye!");
-                break;
+                flag = false;
             }
         }
     }

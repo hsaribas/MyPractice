@@ -8,6 +8,7 @@ public class CountCommonPrefix {
         Scanner scan = new Scanner(System.in);
         String s = scan.nextLine().toLowerCase();
         String text = scan.nextLine().toLowerCase();
+
         String[] arr = text.split(" ");
         int count = 0;
 
@@ -16,6 +17,7 @@ public class CountCommonPrefix {
                 count++;
             }
         }
+
         System.out.println(count);
     }
 }
