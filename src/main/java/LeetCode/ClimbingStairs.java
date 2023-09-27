@@ -4,6 +4,7 @@ public class ClimbingStairs {
 
     public static void main(String[] args) {
         int number = 7;
+
         System.out.println(climbStairs(number));
     }
 
@@ -20,6 +21,7 @@ public class ClimbingStairs {
             prev1 = prev2;
             prev2 = newValue;
         }
+
         return prev2;
     }
 }

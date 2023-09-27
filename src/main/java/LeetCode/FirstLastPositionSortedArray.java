@@ -7,6 +7,7 @@ public class FirstLastPositionSortedArray {
     public static void main(String[] args) {
         int[] arr = {5, 7, 7, 8, 8, 10};
         int tar = 8;
+
         System.out.println(Arrays.toString(searchRange(arr, tar)));
     }
 
@@ -29,6 +30,7 @@ public class FirstLastPositionSortedArray {
                 right = mid - 1;
             }
         }
+
         return result;
     }
 
@@ -42,6 +44,7 @@ public class FirstLastPositionSortedArray {
                 left = mid + 1;
             }
         }
+
         return left;
     }
 
@@ -55,6 +58,7 @@ public class FirstLastPositionSortedArray {
                 right = mid - 1;
             }
         }
+
         return left;
     }
 }
