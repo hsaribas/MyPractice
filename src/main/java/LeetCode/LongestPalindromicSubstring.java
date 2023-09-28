@@ -4,6 +4,7 @@ public class LongestPalindromicSubstring {
 
     public static void main(String[] args) {
         String str = "cbbd";
+
         System.out.println(longestPalindrome(str));
     }
 
@@ -21,6 +22,7 @@ public class LongestPalindromicSubstring {
                 end = i + len / 2;
             }
         }
+
         return s.substring(start, end + 1);
     }
 
@@ -31,6 +33,7 @@ public class LongestPalindromicSubstring {
             L--;
             R++;
         }
+
         return R - L - 1;
     }
 }

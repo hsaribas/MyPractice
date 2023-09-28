@@ -7,11 +7,12 @@ public class HappyNumber {
 
     public static void main(String[] args) {
         int num = 19;
+
         System.out.println(isHappy(num));
     }
 
     public static boolean isHappy(int n) {
-        Set<Integer> seen = new HashSet<>();
+        Set<Integer> set = new HashSet<>();
 
         while (n != 1) {
             int sum = 0;
@@ -21,12 +22,15 @@ public class HappyNumber {
                 sum += digit * digit;
                 n /= 10;
             }
-            if (seen.contains(sum)) {
+
+            if (set.contains(sum)) {
                 return false;
             }
-            seen.add(sum);
+
+            set.add(sum);
             n = sum;
         }
+
         return true;
     }
 }
