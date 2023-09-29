@@ -11,6 +11,7 @@ public class MergeSortedArray {
         int x = 0;
         int[] arr2 = {2, 5, 6};
         int y = 0;
+
         merge(arr1, x, arr2, y);
     }
 
@@ -23,12 +24,14 @@ public class MergeSortedArray {
                 list.add(w);
             }
         }
+
         for (int z : nums2) {
             if (z > 0) {
                 n++;
                 list.add(z);
             }
         }
+
         Collections.sort(list);
         System.out.println(list);
     }

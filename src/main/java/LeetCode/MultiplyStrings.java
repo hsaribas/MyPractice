@@ -4,6 +4,7 @@ public class MultiplyStrings {
 
     public static void main(String[] args) {
         String a = "7", b = "5";
+
         System.out.println(multiply(a, b));
     }
 

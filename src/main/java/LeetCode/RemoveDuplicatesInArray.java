@@ -4,6 +4,7 @@ public class RemoveDuplicatesInArray {
 
     public static void main(String[] args) {
         int[] numbers = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
+
         System.out.println(removeDuplicates(numbers));
     }
 
@@ -17,6 +18,7 @@ public class RemoveDuplicatesInArray {
                 nums[i] = nums[j];
             }
         }
+
         return i + 1;
     }
 }

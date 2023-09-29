@@ -7,6 +7,7 @@ public class MedianOfArrays {
     public static void main(String[] args) {
         int[] x = {1, 2};
         int[] y = {3, 4};
+
         System.out.println(findMedianSortedArrays(x, y));
     }
 
@@ -18,6 +19,7 @@ public class MedianOfArrays {
             nums3[a] = x;
             a++;
         }
+
         for (int y : nums2) {
             nums3[a] = y;
             a++;
