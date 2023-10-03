@@ -7,6 +7,7 @@ public class TwoSum {
     public static void main(String[] args) {
         int[] numbers = {2, 7, 11, 15};
         int point = 9;
+
         System.out.println(Arrays.toString(twoSum(numbers, point)));
     }
 
@@ -21,6 +22,7 @@ public class TwoSum {
                 }
             }
         }
+
         return arr;
     }
 }

@@ -4,6 +4,7 @@ public class Sqrt {
 
     public static void main(String[] args) {
         int a = 49;
+
         System.out.println(mySqrt(a));
     }
 

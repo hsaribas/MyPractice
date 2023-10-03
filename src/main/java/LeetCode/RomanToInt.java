@@ -7,6 +7,7 @@ public class RomanToInt {
 
     public static void main(String[] args) {
         String str = "MCMXCIV";
+
         System.out.println(romanToInt(str));
     }
 
@@ -29,6 +30,7 @@ public class RomanToInt {
                 num += map.get(s.charAt(i));
             }
         }
+
         return num;
     }
 }

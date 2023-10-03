@@ -4,6 +4,7 @@ public class ValidPalindrome {
 
     public static void main(String[] args) {
         String xyz = "A man, a plan, a canal: Panama";
+
         System.out.println(isPalindrome(xyz));
     }
 
@@ -12,7 +13,7 @@ public class ValidPalindrome {
         String[] str1 = str.split("");
         StringBuilder str2 = new StringBuilder();
 
-        for (int i = str1.length - 1; i >= 0; i--) {
+        for (int i = str1.length - 1; i > -1; i--) {
             str2.append(str1[i]);
         }
 
