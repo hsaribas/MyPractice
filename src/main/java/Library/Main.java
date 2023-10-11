@@ -38,12 +38,14 @@ public class Main {
             System.out.print("Enter the ISBN of the book: ");
             String isbn = scan.nextLine();
 
+            System.out.println();
             library.borrowBook(isbn, name);
 
         } else if (dec.equalsIgnoreCase("return")) {
             System.out.print("Enter the ISBN of the book: ");
             String isbn = scan.nextLine();
 
+            System.out.println();
             library.returnBook(isbn);
         }
 

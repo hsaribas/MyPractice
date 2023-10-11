@@ -38,7 +38,6 @@ public class Library {
 
                 System.out.println("Book " + book.getTitle() + " has been borrowed by " + borrowerName);
                 System.out.println();
-
                 return;
             }
         }
@@ -55,7 +54,6 @@ public class Library {
 
                 System.out.println("Book " + book.getTitle() + " has been returned.");
                 System.out.println();
-
                 return;
             }
         }
@@ -74,7 +72,6 @@ public class Library {
         for (Book book : books) {
             if (book.getTitle().equalsIgnoreCase(title)) {
                 searchResult.add(book);
-
                 return searchResult;
             }
         }
@@ -89,7 +86,6 @@ public class Library {
         for (Book book : books) {
             if (book.getAuthor().equalsIgnoreCase(author)) {
                 searchResult.add(book);
-
                 return searchResult;
             }
         }
