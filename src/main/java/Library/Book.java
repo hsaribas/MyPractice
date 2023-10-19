@@ -4,14 +4,14 @@ public class Book {
 
     private String title;
     private String author;
-    private String isbn;
+    private String bookNum;
     private boolean isAvailable;
     private String borrowerName = "";
 
-    public Book(String title, String author, String isbn, boolean isAvailable, String borrowerName) {
+    public Book(String title, String author, String bookNum, boolean isAvailable, String borrowerName) {
         this.title = title;
         this.author = author;
-        this.isbn = isbn;
+        this.bookNum = bookNum;
         this.isAvailable = isAvailable;
         this.borrowerName = borrowerName;
     }
@@ -32,12 +32,12 @@ public class Book {
         this.author = author;
     }
 
-    public String getIsbn() {
-        return isbn;
+    public String getBookNum() {
+        return bookNum;
     }
 
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
+    public void setBookNum(String bookNum) {
+        this.bookNum = bookNum;
     }
 
     public boolean isAvailable() {

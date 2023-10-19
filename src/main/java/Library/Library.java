@@ -7,8 +7,8 @@ public class Library {
 
     private final List<Book> books = new ArrayList<>();
 
-    public void addBook(String title, String author, String isbn, boolean isAvailable, String borrowerName) {
-        Book book = new Book(title, author, isbn, isAvailable, borrowerName);
+    public void addBook(String title, String author, String bookNum, boolean isAvailable, String borrowerName) {
+        Book book = new Book(title, author, bookNum, isAvailable, borrowerName);
         books.add(book);
     }
 
@@ -22,7 +22,7 @@ public class Library {
             for (Book book : books) {
                 System.out.println("- Title: " + book.getTitle());
                 System.out.println("- Author: " + book.getAuthor());
-                System.out.println("- ISBN: " + book.getIsbn());
+                System.out.println("- ISBN: " + book.getBookNum());
                 System.out.println("- Available: " + book.isAvailable());
                 System.out.println("- Borrower Name: " + book.getBorrowerName());
                 System.out.println("---------------------------------");
@@ -30,40 +30,40 @@ public class Library {
         }
     }
 
-    public void borrowBook(String isbn, String borrowerName) {
+    public void borrowBook(String bookNum, String borrowerName) {
         for (Book book : books) {
-            if (book.getIsbn().equalsIgnoreCase(isbn) && book.isAvailable()) {
+            if (book.getBookNum().equalsIgnoreCase(bookNum) && book.isAvailable()) {
                 book.setAvailable(false);
                 book.setBorrowerName(borrowerName);
 
-                System.out.println("Book " + book.getTitle() + " has been borrowed by " + borrowerName);
+                System.out.println(book.getTitle() + " has been borrowed by " + borrowerName);
                 System.out.println();
                 return;
             }
         }
 
-        System.out.println("Book with ISBN: " + isbn + " is not available for now.");
+        System.out.println("Book with book number '" + bookNum + "' is not available for now.");
         System.out.println();
     }
 
-    public void returnBook(String isbn) {
+    public void returnBook(String bookNum) {
         for (Book book : books) {
-            if (book.getIsbn().equalsIgnoreCase(isbn) && !book.isAvailable()) {
+            if (book.getBookNum().equalsIgnoreCase(bookNum) && !book.isAvailable()) {
                 book.setAvailable(true);
                 book.setBorrowerName("");
 
-                System.out.println("Book " + book.getTitle() + " has been returned.");
+                System.out.println(book.getTitle() + " has been returned.");
                 System.out.println();
                 return;
             }
         }
 
-        System.out.println("Book with ISBN: " + isbn + " is available.");
+        System.out.println("Book with book number '" + bookNum + "' is available.");
         System.out.println();
     }
 
-    public void deleteBookByIsbn(String isbn) {
-        books.removeIf(book -> book.getIsbn().equalsIgnoreCase(isbn));
+    public void deleteBookByIsbn(String bookNum) {
+        books.removeIf(book -> book.getBookNum().equalsIgnoreCase(bookNum));
     }
 
     public List<Book> searchByTitle(String title) {
@@ -94,14 +94,14 @@ public class Library {
         return searchResult;
     }
 
-    public Book searchByIsbn(String isbn) {
+    public Book searchByBookNum(String bookNum) {
         for (Book book : books) {
-            if (book.getIsbn().equalsIgnoreCase(isbn)) {
+            if (book.getBookNum().equalsIgnoreCase(bookNum)) {
                 return book;
             }
         }
 
-        System.out.println("There is no book matched with this ISBN.");
+        System.out.println("There is no book matched with this book number.");
         return null;
     }
 }

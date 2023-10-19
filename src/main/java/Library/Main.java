@@ -23,13 +23,13 @@ public class Main {
     }
 
     public static void process() {
-        System.out.println("* * * Welcome to Sky Library * * * ");
+        System.out.println("* * * Welcome to Sky Library! * * * ");
         System.out.println();
 
         library.showAllBooks();
         System.out.println();
 
-        System.out.print("Do you want to 'borrow' a book or 'return'?: ");
+        System.out.print("Do you want to 'borrow' a book or 'return'? ");
         String dec = scan.nextLine().toLowerCase();
 
         if (dec.equalsIgnoreCase("borrow")) {
@@ -42,11 +42,11 @@ public class Main {
             library.borrowBook(isbn, name);
 
         } else if (dec.equalsIgnoreCase("return")) {
-            System.out.print("Enter the ISBN of the book: ");
-            String isbn = scan.nextLine();
+            System.out.print("Enter the book number: ");
+            String bookNum = scan.nextLine();
 
             System.out.println();
-            library.returnBook(isbn);
+            library.returnBook(bookNum);
         }
 
         System.out.println();
